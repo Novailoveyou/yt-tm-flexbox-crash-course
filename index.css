@@ -14,10 +14,12 @@ body {
 }
 
 .item {
+  /* flex: 1 0 100px; */
+  /* flex: 1 0 0; */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
   height: 100px;
   margin: 10px;
   background: #254de4;
@@ -25,13 +27,10 @@ body {
 }
 
 .item:nth-of-type(1) {
-  flex-shrink: 1;
 }
 
 .item:nth-of-type(2) {
-  flex-shrink: 2;
 }
 
 .item:nth-of-type(3) {
-  flex-shrink: 3;
 }
