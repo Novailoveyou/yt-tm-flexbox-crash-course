@@ -10,9 +10,12 @@ body {
 
 .flex-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
+  flex-direction: column;
+  /* Always is on the main axix */
+  justify-content: flex-start;
+  /* Always on the cross axix */
+  align-items: start;
+  height: 500px;
   background-color: #f4f4f4;
 }
 
@@ -23,16 +26,4 @@ body {
   background: #254de4;
   color: #fff;
   float: left;
-}
-
-.item:nth-of-type(1) {
-  align-self: flex-start;
-}
-
-.item:nth-of-type(2) {
-  align-self: center;
-}
-
-.item:nth-of-type(3) {
-  align-self: flex-end;
 }
