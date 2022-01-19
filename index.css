@@ -10,20 +10,17 @@ body {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
-  /* Always is on the main axix */
-  justify-content: flex-start;
-  /* Always on the cross axix */
-  align-items: start;
-  height: 500px;
+  flex-wrap: wrap;
   background-color: #f4f4f4;
 }
 
 .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   margin: 10px;
   background: #254de4;
   color: #fff;
-  float: left;
 }
